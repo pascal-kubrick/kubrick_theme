@@ -6,7 +6,7 @@ It supports Sass and js asset bundling for Drupal Single Directory Components.
 ## Getting started
 
 1. Install [drupal/vite](https://www.drupal.org/project/vite) and [drupal/twig_tweak](https://www.drupal.org/project/twig_tweak)
-2. Clone repo in web/themes/custom/PROJECT_NAME_theme
+2. Clone repo in `web/themes/custom/PROJECT_NAME_theme`
 3. Install dependencies using `bun install`
 4. Optional - run `bun run prepare` to setup a precommit hook. This will automatically run the build step before committing changes. Skip this if you want to run the build step manually or during CI/CD.
 5. Run `bun dev` to start the development server
