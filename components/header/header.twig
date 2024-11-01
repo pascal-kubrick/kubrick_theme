@@ -1,0 +1,8 @@
+<header {{ attributes.addClass("c-header") }}>
+  <div class="c-header__inner l-constrained">
+    <a class="c-header__logo" href="{{ drupal_url('<front>') }}">
+      <img src="{{ gfx }}/logo.svg" alt="{{ drupal_token('site:name') }}" width="1920" height="447">
+    </a>
+    <div class="c-header__nav">{{ include("kubrick_theme:main_menu", {}, with_context = false) }}</div>
+  </div>
+</header>

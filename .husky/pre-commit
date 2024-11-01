@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd web/themes/custom/*_theme;
+# check if there are any changes to .scss or .js files
+git diff --cached --name-only --diff-filter=ACM | grep -E '\.scss$|\.js$' &&
+git stash -k && bun run build && git add dist/ && git stash pop || true

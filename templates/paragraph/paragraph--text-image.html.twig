@@ -1,0 +1,7 @@
+{{ include("kubrick_theme:text_image", {
+  attributes,
+  text_position: paragraph.field_text_position.value,
+  image: content.field_image|field_value,
+  body: content.field_body|field_value,
+  content
+}, with_context = false) }}

@@ -1,0 +1,15 @@
+name: kubrick theme
+description: kubrick custom theme
+type: theme
+core_version_requirement: 10.x || 11.x
+libraries:
+  - kubrick_theme/global
+regions:
+  content: "Main content"
+  hidden: "Hidden"
+ckeditor5-stylesheets:
+  - dist/assets/ckeditor.css
+base theme: false
+depencencies:
+  - drupal/twig_tweak
+  - drupal/vite

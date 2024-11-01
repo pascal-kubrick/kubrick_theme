@@ -1,0 +1,10 @@
+{% set classes = [
+  "c-image",
+  "l-constrained-compact",
+  "l-rhythm"
+] %}
+
+<section {{ attributes.addClass(classes) }}>
+  {{ content.frontend_editing }}
+  {{ image }}
+</section>

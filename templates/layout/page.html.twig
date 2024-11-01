@@ -1,0 +1,17 @@
+{{ include("kubrick_theme:header", {gfx}, with_context = false) }}
+
+{% if not node %}
+  <div class="l-rhythm l-constrained">
+    {{ page.content }}
+  </div>
+{% else %}
+  {{ page.content }}
+{% endif %}
+
+{{ include("kubrick_theme:footer", {gfx}, with_context = false) }}
+{# {% include "@kubrick_theme/partials/cookie-disclaimer.twig" %} #}
+
+{{ include("kubrick_theme:cookies_popup", {
+  text: "@site maakt gebruik van cookies om uw gebruikerservaring te optimaliseren. Door op 'OK' te klikken gaat u akkoord met het plaatsen van deze cookies."|t({'@site': drupal_token('site:name')}) ,
+  button_label: "OK"|t,
+}, with_context = false) }}

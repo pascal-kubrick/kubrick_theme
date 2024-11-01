@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * kubrick_theme.theme
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for all templates.
+ *
+ * Adds variables to all templates.
+ */
+function kubrick_theme_preprocess(&$variables) {
+  $variables["base_path"] = base_path();
+  $theme_path = \Drupal::theme()->getActiveTheme()->getPath();
+  $variables["gfx"] = base_path() . $theme_path . "/gfx";
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ *
+ * Adds pathToTheme variable to js settings.
+ */
+function kubrick_theme_preprocess_page(&$variables) {
+  // Attach a library with JavaScript settings to the page.
+  // get label_overrides and turn them into a js object.
+  $theme_path = \Drupal::theme()->getActiveTheme()->getPath();
+  $variables['#attached']['drupalSettings']['pathToTheme'] = base_path() . $theme_path;
+}

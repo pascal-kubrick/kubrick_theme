@@ -1,0 +1,13 @@
+@use "normalize";
+
+// //////////////////
+// // THEMING      //
+// //////////////////
+
+@use "base/colors";
+@use "base/typography";
+@use "components/c-body";
+
+body {
+  padding: 20px;
+}

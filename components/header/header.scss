@@ -1,0 +1,18 @@
+.c-header__inner {
+  display: flex;
+  margin-block: var(--spacing-m);
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing);
+}
+
+.c-header__logo {
+  width: 200px;
+  display: block;
+
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}

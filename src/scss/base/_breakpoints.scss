@@ -1,0 +1,23 @@
+// Usage:
+// @media (--from-lap) { ... }
+// @media (--until-lap) { ... }
+// @media (--from-lap) and (--until-desk) { ... }
+
+$bp-palm: 400px;
+$bp-lap: 720px;
+$bp-desk: 1024px;
+$bp-wide: 1200px;
+$bp-mega: 1700px;
+$bp-giga: 2000px;
+
+@custom-media --from-palm (width >= #{$bp-palm});
+@custom-media --until-lap (width < #{$bp-lap});
+@custom-media --from-lap (width >= #{$bp-lap});
+@custom-media --until-desk (width < #{$bp-desk});
+@custom-media --from-desk (width >= #{$bp-desk});
+@custom-media --until-wide (width < #{$bp-wide});
+@custom-media --from-wide (width >= #{$bp-wide});
+@custom-media --until-mega (width < #{$bp-mega});
+@custom-media --from-mega (width >= #{$bp-mega});
+@custom-media --until-giga (width < #{$bp-giga});
+@custom-media --from-giga (width >= #{$bp-giga});

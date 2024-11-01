@@ -1,0 +1,11 @@
+<article {{ attributes }}>
+  <div class="l-constrained-compact l-trailer">
+    <h1 class="t-page-title">
+      {{ label|field_value }}
+    </h1>
+    {% if content.body|field_value %}
+      <div class="c-body">{{ content.body|field_value }}</div>
+    {% endif %}
+  </div>
+  {{ content.field_paragraphs|field_value }}
+</article>

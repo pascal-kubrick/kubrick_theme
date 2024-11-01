@@ -1,0 +1,12 @@
+global:
+  vite: true
+  css:
+    theme:
+      src/scss/main.scss: { minified: true, preprocess: false }
+  js:
+    src/js/app.js:
+      { minified: true, preprocess: false, attributes: { type: "module" } }
+  dependencies:
+    - core/drupalSettings
+    - core/drupal
+    - core/once

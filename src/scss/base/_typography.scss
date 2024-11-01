@@ -1,0 +1,58 @@
+:root {
+  --font: Arial, Helvetica, sans-serif;
+  --font-title: Arial, Helvetica, sans-serif;
+
+  --spacing-unit: 1.5;
+  --spacing: calc(var(--spacing-unit) * 1rem);
+
+  --spacing-1: var(--spacing);
+  --spacing-2: calc(var(--spacing) * 2);
+  --spacing-3: calc(var(--spacing) * 3);
+  --spacing-4: calc(var(--spacing) * 4);
+  --spacing-5: calc(var(--spacing) * 5);
+  --spacing-6: calc(var(--spacing) * 6);
+  --spacing-7: calc(var(--spacing) * 7);
+  --spacing-8: calc(var(--spacing) * 8);
+
+  --spacing-m: calc(var(--spacing) * 2);
+  --spacing-xl: calc(var(--spacing) * 3);
+  --spacing-xxl: calc(var(--spacing) * 4);
+
+  font-size: 16px;
+  font-family: var(--font);
+  line-height: var(--spacing-unit);
+
+  @media (--from-lap) {
+    --spacing-xl: calc(var(--spacing) * 6);
+    --spacing-xxl: calc(var(--spacing) * 8);
+  }
+}
+
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+blockquote {
+  quotes: "“" "”" "‘" "’";
+
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 25rem;
+
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.4;
+
+  * {
+    display: inline;
+  }
+
+  &::before {
+    content: open-quote;
+  }
+  &::after {
+    content: close-quote;
+  }
+}

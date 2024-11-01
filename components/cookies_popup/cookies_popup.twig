@@ -1,0 +1,12 @@
+{% set classes = ["c-cookies-popup", "js-cookies-popup"] %}
+
+<div {{ attributes.addClass(classes) }}>
+  <div class="c-cookies-popup__inner">
+    <div class="c-cookies-popup__body">
+      {{ text }}
+    </div>
+    <div class="c-cookies-popup__actions">
+      <button class="c-cookies-popup__button js-cookies-popup__button">{{ button_label }}</button>
+    </div>
+  </div>
+</div>

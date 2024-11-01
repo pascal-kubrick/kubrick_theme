@@ -1,0 +1,16 @@
+{% set classes = [
+  "c-text-image",
+  "c-text-image--text-#{text_position|clean_class}",
+  "l-constrained",
+  "l-rhythm"
+] %}
+
+<section {{ attributes.addClass(classes) }}>
+  {{ content.frontend_editing }}
+  <div class="c-text-image__inner">
+    <div class="c-text-image__image">{{ image }}</div>
+    <div class="c-text-image__text">
+      <div class="c-body">{{ body }}</div>
+    </div>
+  </div>
+</section>

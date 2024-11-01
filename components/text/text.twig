@@ -1,0 +1,10 @@
+{% set classes = [
+  "c-text",
+  "l-constrained-compact",
+  "l-trailer"
+] %}
+
+<section {{ attributes.addClass(classes) }}>
+  {{ content.frontend_editing }}
+  <div class="c-body">{{ body }}</div>
+</section>

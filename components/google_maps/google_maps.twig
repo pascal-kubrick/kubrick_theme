@@ -1,0 +1,10 @@
+{% set classes = [
+"c-google-maps-wrapper"
+] %}
+
+{% set geolocations = geolocations|default(['51.185489, 3.189843']) %}
+
+<div {{attributes.addClass(classes)}}>
+  {{ content.frontend_editing }}
+  <div class="c-google-maps js-map" data-geolocations="{{ geolocations|join(';') }}" data-marker="/{{componentMetadata.path}}/marker.png"></div>
+</div>

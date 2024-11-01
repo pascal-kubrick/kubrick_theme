@@ -1,0 +1,154 @@
+:root {
+  --gutter: clamp(20px, 5vw, 108px);
+  --section-spacing: var(--spacing-xl);
+}
+
+.l-constrained {
+  width: min(1440px, 100% - var(--gutter) * 2);
+  margin-inline: auto;
+}
+
+.l-constrained-compact {
+  width: min(800px, 100% - var(--gutter) * 2);
+  margin-inline: auto;
+}
+
+.l-leader {
+  margin-top: var(--section-spacing);
+}
+
+.l-leader-half {
+  margin-top: calc(var(--section-spacing) / 2);
+}
+
+.l-trailer {
+  margin-bottom: var(--section-spacing);
+}
+
+.l-rhythm {
+  margin-block: var(--section-spacing);
+}
+
+.l-rhythm-inner {
+  padding-block: var(--section-spacing);
+}
+
+.l-leader-inner {
+  padding-top: var(--section-spacing);
+}
+
+.l-trailer-inner {
+  padding-bottom: var(--section-spacing);
+}
+
+.l-children-no-rhythm {
+  > * {
+    margin-block: 0;
+    padding-block: 0;
+  }
+}
+
+.mt-half {
+  margin-top: var(--spacing-half);
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: var(--spacing);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-2);
+}
+
+.mt-3 {
+  margin-top: var(--spacing-3);
+}
+
+.mt-4 {
+  margin-top: var(--spacing-4);
+}
+
+.mt-m {
+  margin-top: var(--spacing-m);
+}
+
+.mt-xl {
+  margin-top: var(--spacing-xl);
+}
+
+.mb-half {
+  margin-bottom: var(--spacing-half);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-2);
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing-3);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-4);
+}
+
+.mb-m {
+  margin-bottom: var(--spacing-m);
+}
+
+.mb-xl {
+  margin-bottom: var(--spacing-xl);
+}
+
+// block / y
+.my-half {
+  margin-block: var(--spacing-half);
+}
+
+.my-0 {
+  margin-block: 0;
+}
+
+.my-1 {
+  margin-block: var(--spacing);
+}
+
+.my-2 {
+  margin-block: var(--spacing-2);
+}
+
+.my-3 {
+  margin-block: var(--spacing-3);
+}
+
+.my-4 {
+  margin-block: var(--spacing-4);
+}
+
+.my-m {
+  margin-block: var(--spacing-m);
+}
+
+.my-xl {
+  margin-block: var(--spacing-xl);
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}

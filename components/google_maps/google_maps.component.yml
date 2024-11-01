@@ -1,0 +1,14 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: google_maps
+status: stable
+libraryOverrides:
+  vite: true
+  css:
+    component:
+      google_maps.scss: {}
+  js:
+    google_maps.component.js:
+      minified: true
+      preprocess: false
+      attributes:
+        type: module

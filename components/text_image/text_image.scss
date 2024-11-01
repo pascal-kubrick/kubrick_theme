@@ -1,0 +1,29 @@
+.c-text-image {
+  --flip: 1;
+}
+
+.c-text-image__inner {
+  display: grid;
+  gap: var(--spacing-m);
+
+  &,
+  & > * {
+    transform: scaleX(var(--flip));
+  }
+
+  @media (--from-lap) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.c-text-image__image {
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+
+.c-text-image--text-left {
+  --flip: -1;
+}
