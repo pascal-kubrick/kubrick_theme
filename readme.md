@@ -13,7 +13,7 @@ It supports Sass and js asset bundling for Drupal Single Directory Components.
 
 ## Adding new components
 
-Run `drush sdc [component-name]` to generate a new component. This will create a new folder in the components directory with a twig file and optional css / js files. The Vite config will pick up the new component and modify the scaffoled files to work with Sass + Vite.
+Run `drush generate sdc` to generate a new component. This will create a new folder in the components directory with a twig file and optional css / js files. The Vite config will pick up the new component and modify the scaffoled files to work with Sass + Vite.
 
 ## Additional features
 
