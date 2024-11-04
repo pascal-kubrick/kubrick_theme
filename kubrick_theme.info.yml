@@ -13,3 +13,4 @@ base theme: false
 depencencies:
   - drupal/twig_tweak
   - drupal/vite
+  - drupal/twig_field_value
